@@ -40,9 +40,9 @@ export default function App() {
     return saved ? JSON.parse(saved) : {
       name: 'Freelancer Alpha',
       email: 'freelancer@example.com',
-      supabaseUrl: '',
-      supabaseAnonKey: '',
-      stripePublishableKey: '',
+      supabaseUrl: 'https://uosksxbnavkxeygottah.supabase.co',
+      supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVvc2tzeGJuYXZreGV5Z290dGFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3Mzc0NDUsImV4cCI6MjA5NTMxMzQ0NX0.6vaxwpV7TTBFRERkXFjiMqmfiGGCn52rgscp3vTPfmk',
+      stripePublishableKey: 'pk_test_51Tb7dEBcF0qfuc5OK5SkbePdKGFFRwy4WEmfZ5c8wUHNWvgKQJaETC6OegPrgWF4oEfzG1RhVjkCJY7Pj82000dF002PsfMBMz',
       stripeSecretKey: '',
       stripePaymentLink: ''
     };
@@ -388,10 +388,13 @@ IN WITNESS WHEREOF, the parties execute this Agreement.`;
             <>
               <a href="#features" className="text-xs font-semibold hover:text-white transition">Features</a>
               <a href="#pricing" className="text-xs font-semibold hover:text-white transition">Pricing</a>
-              <button onClick={() => setView('login')} className="btn btn-ghost text-xs font-semibold px-4 py-2">
-                Sign In
+              <button 
+                onClick={() => setView('login')} 
+                className="btn border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 text-xs font-bold px-4.5 py-2.5 rounded-lg transition-all shadow-md shadow-blue-500/5"
+              >
+                Sign In to Console
               </button>
-              <button onClick={() => setView('app')} className="btn btn-primary text-xs py-2 px-4">
+              <button onClick={() => setView('app')} className="btn btn-primary text-xs py-2.5 px-4 font-bold">
                 Console Dashboard
               </button>
             </>
